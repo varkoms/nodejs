@@ -16,3 +16,7 @@ No hay mucho que explicar de éste módulo, nos permite acceder al sistema de ar
 >- Por promesas (fs/fs.Promises.js)
 >- Mediante Async/Await (fs/fs.async-await.mjs)
 >- Mediante Async/Await y en paralelo (fs/fs.async-await-parallel.mjs)
+
+## Path
+---
+El módulo path es uno de los módulos incorporados de casa en NodeJS y lo podemos usar para trabajar con rutas dentro del sistema de archivos. Es uno de los módulos más usados, sea cual sea el nivel de NodeJS en el que estés y resulta básico para muchas aplicaciones basadas en Node.
