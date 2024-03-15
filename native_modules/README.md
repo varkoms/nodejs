@@ -10,7 +10,7 @@ El módulo OS en Node. js proporciona información detallada sobre el hardware y
 ---
 No hay mucho que explicar de éste módulo, nos permite acceder al sistema de archivos del sistema operativo, crear y renombrar carpetas, acceder y escribir archivos, etc.
 
-> Formas de Leer un archivo
+## _Formas de Leer un archivo_
 >- Síncrona (fs/fs.readFile.sync.js)
 >- Asíncrona (fs/fs.readFile.async.js)
 >- Por promesas (fs/fs.Promises.js)
