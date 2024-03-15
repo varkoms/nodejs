@@ -1,0 +1,22 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Repositorio para proyectos y entrenamiento de NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "picocolors": "^1.0.0"
+  }
+}
+
+// X.Y.Z ---> SEMANTIC VERSIONING
+
+// X la MAYOR, es cuando se rompe la compatibilidad hacia atras
+// Y la MINOR, es cuando se añaden nuevas funcionalidades
+// Z la PATCH, es cuando se arreglan bugs y fixes.
