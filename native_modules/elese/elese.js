@@ -4,6 +4,9 @@
 
 const fs = require("node:fs/promises");
 const path = require('node:path')
+// 03/15/2024 - 11:42
+// Se añade feature de picocolors, permite usar colores en la terminal
+const pico = require('picocolors')
 
 // 03/14/2024 - 18:44
 // Poder pasar como parámetro dentro de la linea de comandos la carpeta en la cual queremos usar el 'ls'
@@ -14,7 +17,7 @@ async function ls(folder) {
   try {
     files = await fs.readdir(folder);
   } catch (error) {
-    console.error(`No se pudo leer el directorio "${folder}"`);
+    console.error(pico.red(`❌ No se pudo leer el directorio "${folder}"`));
     process.exit(1);
   }
 
@@ -35,7 +38,7 @@ async function ls(folder) {
 
     // Usar los padEnd() y padStart() para darle "formato" a los resultados
     // TODO: Arreglar la tabulación para que los resultados sean simétricos y no se descuadre
-    return `${fileType} ${fileSize.toString()} ${fileModified} ${file}`
+    return `${pico.cyan(fileType)} ${pico.green(fileSize.toString())} ${pico.magenta(fileModified)} ${pico.blue(file)}`
   });
 
   const filesInfo = await Promise.all(filesPromises)
